@@ -1,0 +1,41 @@
+.animate__animated{
+   animation: infinite;
+   animation-delay: 0.2s;
+}
+
+.animate__fadeIn{
+   animation-delay: 1s;
+   animation-iteration-count: 1;
+}
+
+.anim_to{
+   animation-delay: 2s;
+   animation-iteration-count: 1;
+}
+
+.anim_tree{
+   animation-delay: 3s;
+   animation-iteration-count: 1;
+}
+
+.anim_fore{
+   animation-delay: 4s;
+   animation-iteration-count: 1;
+}
+
+.anim_five{
+   animation-delay: 5s;
+   animation-iteration-count: 1;
+}
+
+.line-animation{
+   stroke-dashoffset: 600;
+   stroke-dasharray: 600;
+   animation: animdash 5s infinite 6s; 
+}
+
+@keyframes animdash {
+   to{
+      stroke-dashoffset: 0;
+   }
+}

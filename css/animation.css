@@ -1,0 +1,4 @@
+.animate__animated {
+  -webkit-animation: infinite;
+          animation: infinite;
+}
