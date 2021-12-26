@@ -3,7 +3,7 @@
 @import "global";
 @import "animation";
 
-.header{
+.header {
    position: relative;
    height: 100vh;
    // margin: 0 auto;
@@ -19,35 +19,35 @@
  }
 }
 
-.slider-item__info{
+.slider-item__info {
  position: absolute;
  right: 80px;
  bottom: 116px;
  text-align: right;
 }
 
-.slider-item__info-subtitle{
+.slider-item__info-subtitle {
    margin-bottom: 5px;
 }
-.slider-item__info-subttext{
+.slider-item__info-subttext {
    margin-bottom: 8px;
 }
 
-.slider-item__info-text{
+.slider-item__info-text {
    font-weight: 800;
    font-size: 40px;
    line-height: 45px;
    margin-bottom: 20px;
 }
 
-.slider-item__info-title{
+.slider-item__info-title {
    font-weight: 800;
    font-size: 80px;
    line-height: 86px;
    margin-bottom: 48px;
 }
 
-.slider-arrows{
+.slider-arrows {
    position: absolute;
    top: 40px;
    right: 80px;
@@ -58,7 +58,7 @@
    right: 125px;
 }
 
-.slider-dotshead{
+.slider-dotshead {
    .slider-body{
       position: absolute;
       display: flex;
@@ -100,7 +100,7 @@
 }
 
 
-.header__aside{
+.header__aside {
    position: absolute;
    top: 0;
    left: 0;
@@ -110,7 +110,7 @@
    text-align: center;
 }
 
-.header__title{
+.header__title {
    position: absolute;
    top: 5px;
    left: 5px;
@@ -122,7 +122,7 @@
    font-weight: 800;
 }
 
-.menu{
+.menu  {
    padding-top: 40px;
    a{
       span{
@@ -139,7 +139,7 @@
    }
 }
 
-.header__date{
+.header__date {
    font-weight: 800;
    font-size: 72px;
    line-height: 64px;
@@ -156,13 +156,13 @@
    }
 }
 
-.header__search{
+.header__search {
    padding-top: 15px;
    padding-bottom: 35px;
    cursor: pointer;
 }
 
-.header__location{
+.header__location {
    display: inline-block;
    font-weight: 300;
    font-size: 12px;
@@ -186,14 +186,14 @@
 }
 
 
-.header__map{
+.header__map {
    position: absolute;
    right: 0;
    top: 0;
    z-index: 3;
 }
 
-.header__arrows{
+.header__arrows {
    position: absolute;
    left: 210px;
    bottom: 20px;
@@ -201,7 +201,7 @@
 }
 
 
-.surf{
+.surf {
 
    padding: 160px 0 120px;
    background-image: url(../image/icons/surf_POI.svg);
@@ -210,12 +210,11 @@
    background-size: auto;
 }
 
-.surf__subtitle{
+.surf__subtitle {
    text-align: right;
    padding-right: 80px;
    margin-top: -86px;
 }
-
 
 .surf-slide{
    padding-top: 110px;
@@ -315,6 +314,7 @@
       }
    }
 }
+
 .slider-dots__content-row{
    display: flex;
    justify-content: space-between;
@@ -335,6 +335,7 @@
    line-height: 23px;
    text-align: center;
 }
+
 .slider-dots__content-name{
    font-weight: 300;
    font-size: 10px;
@@ -416,6 +417,7 @@
       }
    }
 }
+
 .slider--dots--2{
    top: 270px;
    left: 0;
@@ -433,18 +435,22 @@
       }
    }
 }
+
 .slider--dots--3{
    top: 330px;
    left: 25px;
 }
+
 .slider--dots--4{
    top: 470px;
    left: -25px;
 }
+
 .slider--dots--5{
    top: 230px;
    left: -65px;
 }
+
 .slider--dots--6{
    top: 550px;
    left: -120px;
@@ -719,10 +725,12 @@
    right: 40px;
    top: 215px;
 }
+
 .surfboard-box__position-2{
    left: 10px;
    top: 313px;
 }
+
 .surfboard-box__position-3{
    top: 600px;
    left: 52px;
@@ -776,6 +784,7 @@
 .surfboard__box-circle.activ + .surfboard__box-content{
    display: block;
 }
+
 .surfboard__box-content{
    display: none;
    position: absolute;
@@ -813,6 +822,7 @@
    }
    
 }
+
 .footer__copyrigt{
    padding-top: 27px;
    text-align: center;
