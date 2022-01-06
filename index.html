@@ -13,7 +13,7 @@
 
 <body>
 
-
+   <!-- =========================header================= -->
    <header class="header">
       <div class="container">
          <div class="header__title">
@@ -58,47 +58,61 @@
                   fill="white" />
             </svg>
          </div>
+         <div class="menu-btn">
+            <div class="menu-btn__line"></div>
+            <div class="menu-btn__line2"></div>
+            <div class="menu-btn__line3"></div>
+         </div>
+
+         <!-- header aside -->
          <div class="header__aside">
-            <div class="logo">
-               <a href="#">
-                  <img src="./image/img/Logo.svg" alt="">
-               </a>
-            </div>
-            <nav class="menu">
-               <ul class="menu__list">
-                  <li>
-                     <a href="#">
-                        <img src="./image/icons/Surf.svg" alt=""><span>surf</span>
-                     </a>
-                  </li>
-                  <li>
-                     <a href="#">
-                        <img src="./image/icons/Travel.svg" alt=""><span>Travel</span>
-                     </a>
-                  </li>
-                  <li>
-                     <a href="#">
-                        <img src="./image/icons/Camp.svg" alt=""><span>Sleep</span>
-                     </a>
-                  </li>
-                  <li>
-                     <a href="#">
-                        <img src="./image/icons/Shape.svg" alt=""><span>Shop</span>
-                     </a>
-                  </li>
-               </ul>
-            </nav>
-            <div class="header__search">
-               <img src="./image/icons/Search.svg" alt="">
-            </div>
-            <div class="header__date">
-               20
-               <span>06 | 2022</span>
-            </div>
-            <div class="header__location">
-               California
+            <div class="header__aside-inner">
+               <div class="logo">
+                  <a href="#">
+                     <img src="./image/img/Logo.svg" alt="">
+                  </a>
+               </div>
+               <nav class="menu">
+                  <ul class="menu__list">
+                     <li>
+                        <a href="#">
+                           <img src="./image/icons/Surf.svg" alt=""><span>surf</span>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="#">
+                           <img src="./image/icons/Travel.svg" alt=""><span>Travel</span>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="#">
+                           <img src="./image/icons/Camp.svg" alt=""><span>Sleep</span>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="#">
+                           <img src="./image/icons/Shape.svg" alt=""><span>Shop</span>
+                        </a>
+                     </li>
+                  </ul>
+               </nav>
+               <div class="search__loc__date">
+                  <div class="header__search">
+                     <img src="./image/icons/Search.svg" alt="">
+                  </div>
+                  <div class="header__date">
+                     <span id="day"></span>
+                     <span id="date"></span>
+                  </div>
+                  <div class="header__location">
+                     <img src="../image/icons/h-nav_loc.svg" alt="Location logo" />
+                     <a target="_blank" href="https://goo.gl/maps/9h67hs1u4oPnsztA9">California</a>
+                  </div>
+               </div>
             </div>
          </div>
+
+         <!-- header slider -->
          <div class="header__slider">
             <div class="header__slider-item slider-item">
                <div class="slider-item__info">
@@ -145,6 +159,7 @@
                </div>
             </div>
          </div>
+         <!-- slider-dotshead -->
          <div class="slider-dotshead">
             <div class="slider-body">
                <div class="slider-dots__item">
@@ -176,15 +191,16 @@
       </div>
    </header>
 
-   <!-- <section class="surf">
+   <!-- =========================surf================= -->
+   <section class="surf">
       <div class="container">
+         <img class="surf__loc-img" src="./image/icons/surf_POI.svg" alt="">
          <div class="title">
             <span>
                surf
                <h3>surf</h3>
             </span>
          </div>
-
          <div class="surf__subtitle">
             <div class="subtitle">
                <div class="headline-left">Current location</div>
@@ -442,100 +458,115 @@
                </div>
             </div>
          </div>
-
          <div class="surf-slide">
-            <div class="surf-box" style="background-image: url(../image/img/slide-1.jpg);">
-               <div class="surf-box__inner">
-                  <div class="surf-box__inner-title">Malibu<br>Beach</div>
-                  <div class="surf-box__inner-location">California <span>|</span> USA</div>
-                  <div class="surf-box__inner-btn">
-                     <a class="btn" href="#">
-                        view <span>serf</span>
-                     </a>
+            <div class="surf-box">
+               <div class="surf-box__wrapper" style="background-image: url(../image/img/slide-1.jpg);">
+                  <div class="surf-box__inner">
+                     <div class="surf-box__inner-title">Malibu<br>Beach</div>
+                     <div class="surf-box__inner-location">California <span>|</span> USA</div>
+                     <div class="surf-box__inner-btn">
+                        <a class="btn" href="#">
+                           view <span>serf</span>
+                        </a>
+                     </div>
                   </div>
                </div>
             </div>
-            <div class="surf-box" style="background-image: url(../image/img/slide-2.jpg);">
-               <div class="surf-box__inner">
-                  <div class="surf-box__inner-title">Airlie<br>Beach</div>
-                  <div class="surf-box__inner-location">Queensland <span>|</span> Australia</div>
-                  <div class="surf-box__inner-btn">
-                     <a class="btn" href="#">
-                        view <span>serf</span>
-                     </a>
+            <div class="surf-box">
+               <div class="surf-box__wrapper" style="background-image: url(../image/img/slide-2.jpg);">
+                  <div class="surf-box__inner">
+                     <div class="surf-box__inner-title">Airlie<br>Beach</div>
+                     <div class="surf-box__inner-location">Queensland <span>|</span> Australia</div>
+                     <div class="surf-box__inner-btn">
+                        <a class="btn" href="#">
+                           view <span>serf</span>
+                        </a>
+                     </div>
                   </div>
                </div>
             </div>
-            <div class="surf-box" style="background-image: url(../image/img/slide-3.jpg);">
-               <div class="surf-box__inner">
-                  <div class="surf-box__inner-title">Cloud<br>Nine</div>
-                  <div class="surf-box__inner-location">Siargao <span>|</span> Philippines</div>
-                  <div class="surf-box__inner-btn">
-                     <a class="btn" href="#">
-                        view <span>serf</span>
-                     </a>
+            <div class="surf-box">
+               <div class="surf-box__wrapper" style="background-image: url(../image/img/slide-3.jpg);">
+                  <div class="surf-box__inner">
+                     <div class="surf-box__inner-title">Cloud<br>Nine</div>
+                     <div class="surf-box__inner-location">Siargao <span>|</span> Philippines</div>
+                     <div class="surf-box__inner-btn">
+                        <a class="btn" href="#">
+                           view <span>serf</span>
+                        </a>
+                     </div>
                   </div>
                </div>
             </div>
-            <div class="surf-box" style="background-image: url(../image/img/slide-4.jpg);">
-               <div class="surf-box__inner">
-                  <div class="surf-box__inner-title">Vieux Boucau</div>
-                  <div class="surf-box__inner-location">Hossegor <span>|</span> France</div>
-                  <div class="surf-box__inner-btn">
-                     <a class="btn" href="#">
-                        view <span>serf</span>
-                     </a>
+            <div class="surf-box">
+               <div class="surf-box__wrapper" style="background-image: url(../image/img/slide-4.jpg);">
+                  <div class="surf-box__inner">
+                     <div class="surf-box__inner-title">Vieux<br>Boucau</div>
+                     <div class="surf-box__inner-location">Hossegor <span>|</span> France</div>
+                     <div class="surf-box__inner-btn">
+                        <a class="btn" href="#">
+                           view <span>serf</span>
+                        </a>
+                     </div>
                   </div>
                </div>
             </div>
-            <div class="surf-box" style="background-image: url(../image/img/slide-1.jpg);">
-               <div class="surf-box__inner">
-                  <div class="surf-box__inner-title">Malibu<br>Beach</div>
-                  <div class="surf-box__inner-location">California <span>|</span> USA</div>
-                  <div class="surf-box__inner-btn">
-                     <a class="btn" href="#">
-                        view <span>serf</span>
-                     </a>
+            <div class="surf-box">
+               <div class="surf-box__wrapper" style="background-image: url(../image/img/slide-1.jpg);">
+                  <div class="surf-box__inner">
+                     <div class="surf-box__inner-title">Malibu<br>Beach</div>
+                     <div class="surf-box__inner-location">California <span>|</span> USA</div>
+                     <div class="surf-box__inner-btn">
+                        <a class="btn" href="#">
+                           view <span>serf</span>
+                        </a>
+                     </div>
                   </div>
                </div>
             </div>
-            <div class="surf-box" style="background-image: url(../image/img/slide-2.jpg);">
-               <div class="surf-box__inner">
-                  <div class="surf-box__inner-title">Airlie<br>Beach</div>
-                  <div class="surf-box__inner-location">Queensland <span>|</span> Australia</div>
-                  <div class="surf-box__inner-btn">
-                     <a class="btn" href="#">
-                        view <span>serf</span>
-                     </a>
+            <div class="surf-box">
+               <div class="surf-box__wrapper" style="background-image: url(../image/img/slide-2.jpg);">
+                  <div class="surf-box__inner">
+                     <div class="surf-box__inner-title">Airlie<br>Beach</div>
+                     <div class="surf-box__inner-location">Queensland <span>|</span> Australia</div>
+                     <div class="surf-box__inner-btn">
+                        <a class="btn" href="#">
+                           view <span>serf</span>
+                        </a>
+                     </div>
                   </div>
                </div>
             </div>
-            <div class="surf-box" style="background-image: url(../image/img/slide-3.jpg);">
-               <div class="surf-box__inner">
-                  <div class="surf-box__inner-title">Cloud<br>Nine</div>
-                  <div class="surf-box__inner-location">Siargao <span>|</span> Philippines</div>
-                  <div class="surf-box__inner-btn">
-                     <a class="btn" href="#">
-                        view <span>serf</span>
-                     </a>
+            <div class="surf-box">
+               <div class="surf-box__wrapper" style="background-image: url(../image/img/slide-3.jpg);">
+                  <div class="surf-box__inner">
+                     <div class="surf-box__inner-title">Cloud<br>Nine</div>
+                     <div class="surf-box__inner-location">Siargao <span>|</span> Philippines</div>
+                     <div class="surf-box__inner-btn">
+                        <a class="btn" href="#">
+                           view <span>serf</span>
+                        </a>
+                     </div>
                   </div>
                </div>
             </div>
-            <div class="surf-box" style="background-image: url(../image/img/slide-4.jpg);">
-               <div class="surf-box__inner">
-                  <div class="surf-box__inner-title">Vieux<br>Boucau</div>
-                  <div class="surf-box__inner-location">Hossegor <span>|</span> France</div>
-                  <div class="surf-box__inner-btn">
-                     <a class="btn" href="#">
-                        view <span>serf</span>
-                     </a>
+            <div class="surf-box">
+               <div class="surf-box__wrapper" style="background-image: url(../image/img/slide-4.jpg);">
+                  <div class="surf-box__inner">
+                     <div class="surf-box__inner-title">Vieux<br>Boucau</div>
+                     <div class="surf-box__inner-location">Hossegor <span>|</span> France</div>
+                     <div class="surf-box__inner-btn">
+                        <a class="btn" href="#">
+                           view <span>serf</span>
+                        </a>
+                     </div>
                   </div>
                </div>
             </div>
          </div>
       </div>
    </section>
-
+   <!--
    <section class="holder">
       <div class="container">
          <div class="title">
@@ -712,7 +743,7 @@
          </div>
       </div>
    </section>
-
+   
    <section class="holder sleep">
       <div class="container">
          <div class="title">
@@ -974,8 +1005,7 @@
       <div class="footer__copyrigt">
          © Go-Surf 2022. All Rights Reserved.
       </div>
-   </footer>
-   </div>  -->
+   </footer> -->
 
    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
    <script src="./slick/slick.min.js"></script>
