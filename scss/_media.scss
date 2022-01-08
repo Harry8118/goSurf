@@ -3,11 +3,11 @@
    .slider-item__info-title {
       width: 420px;
       font-size: 50px;
-      bottom: 140px;
+      bottom: 70px;
    }
 
    .slider-item__info-subtitle {
-      bottom: 187px;
+      bottom: 115px;
    }
 
    .header__map svg {
@@ -21,6 +21,17 @@
       left: 50px;
    }
 
+   .slider-item__info-link {
+      bottom: -25px;
+   }
+
+   .slider-item__info-text {
+      bottom: 8px;
+   }
+
+   .slider-item__info-subttext {
+      bottom: 40px;
+   }
    //======================surf=============================//
    .surf {
       .surf__loc-img {
@@ -48,7 +59,105 @@
             }
             .subtitle__head {
                font-size: 20px;
-               width: 180px;
+               width: 203px;
+            }
+         }
+      }
+   }
+
+   //======================holder  sleep=============================//
+   .holder {
+      .bg-img2 {
+         width: 80px;
+         height: 140px;
+         bottom: -45px;
+      }
+      .title {
+         span {
+            font-size: 60px;
+
+            h3 {
+               font-size: 30px;
+               top: -10px;
+
+               &::after {
+                  width: 60px;
+               }
+            }
+         }
+      }
+
+      .holder-slider__subtitle {
+         .subtitle {
+            .headline-left {
+               font-size: 16px;
+               line-height: 20px;
+               padding-left: 60px;
+               &::before {
+                  width: 50px;
+               }
+            }
+
+            .subtitle__head {
+               font-size: 18px;
+            }
+         }
+      }
+
+      .bitmap-img {
+         width: 230px;
+         top: 40%;
+      }
+
+      .holder-slider__descr {
+         .descr {
+            width: 260px;
+
+            .headline-right {
+               letter-spacing: 3px;
+               padding-right: 65px;
+               line-height: 30px;
+               font-size: 18px;
+
+               &::before {
+                  width: 60px;
+               }
+            }
+
+            .descr__head {
+               font-size: 20px;
+               padding-right: 45px;
+               img {
+                  width: 40px;
+               }
+
+               .holder__star-list {
+                  right: -100px;
+               }
+            }
+         }
+      }
+
+      .holder-slider__info {
+         .holder-slider__info-item {
+            margin-bottom: 120px;
+            .holder-slider__info-subtitle {
+               font-size: 18px;
+               line-height: 16px;
+            }
+
+            .holder-slider__info-title {
+               font-size: 16px;
+               line-height: 20px;
+               padding-left: 25px;
+
+               .info__title-span {
+                  font-size: 12px;
+               }
+
+               .info__title-prise-span {
+                  font-size: 12px;
+               }
             }
          }
       }
@@ -226,7 +335,7 @@
             }
             .subtitle__head {
                font-size: 24px;
-               width: 225px;
+               width: 253px;
             }
          }
       }
@@ -266,9 +375,94 @@
          }
       }
    }
-}
 
-//=====================media 1040px======================//
+   //======================holder sleep========================//
+   .holder {
+      .bg-img2 {
+         width: 150px;
+         height: 200px;
+      }
+
+      .title {
+         span {
+            font-size: 60px;
+            transform: translateX(-10px);
+            h3 {
+               font-size: 30px;
+               &::after {
+                  width: 60px;
+                  top: -2px;
+               }
+            }
+         }
+      }
+
+      .holder-slider__subtitle {
+         .subtitle {
+            .headline-left {
+               font-size: 18px;
+               line-height: 24px;
+               padding-left: 70px;
+               &::before {
+                  width: 60px;
+               }
+            }
+            .subtitle__head {
+               font-size: 22px;
+            }
+         }
+      }
+
+      .bitmap-img {
+         width: 350px;
+         height: 240px;
+         top: 46%;
+      }
+
+      .holder-slider__descr {
+         .descr {
+            .headline-right {
+               font-size: 20px;
+            }
+
+            .descr__head {
+               font-size: 22px;
+               padding-right: 60px;
+               img {
+                  width: 45px;
+               }
+            }
+         }
+      }
+
+      .holder-slider__info {
+         .holder-slider__info-item {
+            .holder-slider__info-title {
+               font-size: 20px;
+               line-height: 25px;
+               .info__title-span {
+                  font-size: 14px;
+               }
+               .info__title-prise-span {
+                  font-size: 14px;
+               }
+            }
+         }
+      }
+
+      .holder-slider__btn {
+         .btn {
+            font-size: 16px;
+            line-height: 36px;
+            span {
+               font-size: 18px;
+               padding: 8px 45px 8px 16px;
+            }
+         }
+      }
+   }
+}
+//=====================media 1024px======================//
 @media (min-width: 1024px) {
    .header__map {
       svg {
@@ -462,7 +656,7 @@
       }
 
       .surf__subtitle {
-         bottom: 40px;
+         bottom: 60px;
          padding-right: 60px;
          .subtitle {
             .headline-left {
@@ -473,7 +667,8 @@
             }
             .subtitle__head {
                font-size: 30px;
-               width: 260px;
+               width: 325px;
+               padding-right: 20px;
             }
          }
       }
@@ -618,6 +813,119 @@
          }
       }
    }
+
+   //=======================holder sleep===============//
+   .holder {
+      padding-top: 60px;
+      .slider-arrows {
+         display: block !important;
+         position: absolute;
+         top: 140px;
+         right: 32px;
+         opacity: 0.5;
+      }
+      .slider-arrows__left {
+         padding-right: 35px;
+      }
+      .bg-img2 {
+         width: 190px;
+         height: 250px;
+         bottom: -70px;
+      }
+
+      .title {
+         span {
+            font-size: 100px;
+            h3 {
+               font-size: 60px;
+               &::after {
+                  width: 70px;
+                  top: 5px;
+               }
+            }
+         }
+      }
+
+      .holder-slider__subtitle {
+         top: 60px;
+         .subtitle {
+            .headline-left {
+               font-size: 22px;
+               line-height: 28px;
+               padding-left: 80px;
+               &::before {
+                  width: 70px;
+               }
+            }
+            .subtitle__head {
+               font-size: 30px;
+            }
+         }
+      }
+
+      .bitmap-img {
+         width: 400px;
+         height: 240px;
+         top: 55%;
+      }
+
+      .holder-slider__descr {
+         .descr {
+            padding-left: 40px;
+            width: 350px;
+            .descr__head {
+               font-size: 28px;
+               padding-right: 65px;
+               img {
+                  width: 50px;
+               }
+
+               .holder__star-list {
+                  right: -130px;
+               }
+            }
+         }
+      }
+
+      .holder-slider__info {
+         padding: 30px 40px 0 40px;
+         .holder-slider__info-item {
+            .holder-slider__info-title {
+               font-size: 28px;
+               line-height: 32px;
+               .info__title-span {
+                  font-size: 16px;
+               }
+               .info__title-prise-span {
+                  font-size: 16px;
+               }
+
+               .quantity-button.quantity-up {
+                  top: 39px;
+               }
+
+               .quantity-button.quantity-down {
+                  top: 36px;
+               }
+
+               .quantity input {
+                  height: 28px;
+               }
+            }
+         }
+      }
+
+      // .holder-slider__btn {
+      //    .btn {
+      //       // font-size: 16px;
+      //       // line-height: 36px;
+      //       span {
+      //          // font-size: 18px;
+      //          // padding: 8px 45px 8px 16px;
+      //       }
+      //    }
+      // }
+   }
 }
 
 //===================media 1200px======================//
@@ -690,7 +998,7 @@
       }
 
       .surf__subtitle {
-         bottom: 95px;
+         bottom: 130px;
       }
    }
 }
@@ -803,7 +1111,7 @@
 
             .subtitle__head {
                font-size: 40px;
-               width: 330px;
+               width: 430px;
             }
          }
       }

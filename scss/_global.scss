@@ -127,10 +127,12 @@ $aqua: #4af6cd;
 
 .descr {
    display: inline-block;
-   padding-left: 15px;
+   padding-left: 10px;
+   position: relative;
+   top: -75px;
    .descr__head {
       font-weight: 800;
-      font-size: 40px;
+      font-size: 12px;
       span {
          font-weight: 100;
       }
@@ -187,7 +189,7 @@ input[type="number"] {
 
 .quantity input {
    width: 30px;
-   height: 42px;
+   height: 20px;
    // float: left;
    display: block;
    font-size: inherit;
@@ -211,7 +213,7 @@ input[type="number"] {
    cursor: pointer;
    width: 25px;
    height: 25px;
-   top: 45px;
+   top: 22px;
    display: flex;
    justify-content: center;
    align-items: center;
@@ -220,7 +222,7 @@ input[type="number"] {
 .quantity-button.quantity-up {
    position: absolute;
    right: 0;
-   top: 48px;
+   top: 25px;
 }
 
 .quantity-button.quantity-down {

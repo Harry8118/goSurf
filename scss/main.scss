@@ -298,7 +298,7 @@
       .subtitle {
          .subtitle__head {
             font-size: 16px;
-            width: 155px;
+            width: 170px;
             padding: 0;
          }
       }
@@ -553,53 +553,89 @@
 }
 //===========================holder======================//
 .holder {
-   margin: auto;
-   background-image: url(../image/img/cocktail_PNG33.png);
-   &.sleep {
-      background-image: url(../image/img/Frangipani.png);
-      background-repeat: no-repeat;
-      background-position: bottom right;
+   position: relative;
+   padding-top: 40px;
+   margin-bottom: 40px;
+   .bg-img2 {
+      width: 60px;
+      height: 110px;
+      position: absolute;
+      right: 0px;
+      bottom: -15px;
    }
-   background-position: bottom -110px right;
-   background-repeat: no-repeat;
-   margin-bottom: 200px;
-   padding: 0 0 120px;
+   &.sleep {
+      background-repeat: no-repeat;
+   }
 
    .slider-arrows {
+      display: none !important;
       top: 225px;
       opacity: 0.5;
+   }
+
+   .title {
+      span {
+         font-size: 40px;
+         transform: translateX(-10px);
+         h3 {
+            font-size: 20px;
+            &::after {
+               width: 40px;
+               top: -2px;
+            }
+         }
+      }
+   }
+
+   .bitmap-img {
+      width: 150px;
+      position: absolute;
+      right: 0;
+      top: 35%;
+   }
+
+   .headline-right {
+      font-size: 12px;
+      letter-spacing: 1px;
+      padding-right: 45px;
+      line-height: 10px;
+      &::before {
+         width: 40px;
+      }
    }
 }
 
 .holder__slider {
    .holder-slider__head {
-      background-repeat: no-repeat;
-      background-position: top left;
-      min-height: 780px;
+      .holder-bgimg {
+         background-repeat: no-repeat;
+         background-position: top left;
+         background-size: contain;
+         width: 100%;
+         height: auto;
+         max-height: 771px;
+         max-width: 1102px;
+      }
    }
    .holder-slider__descr {
-      margin-top: -230px;
-      padding: 160px 0 0 100px;
-      min-height: 320px;
-      background-repeat: no-repeat;
-      background-size: contain;
-      background-position: right center;
       .descr {
+         width: 230px;
          .descr__head {
-            position: relative;
-            padding-right: 78px;
+            position: absolute;
+            padding-right: 32px;
             img {
                position: absolute;
                right: 0;
-               top: 0;
+               top: -20px;
+               width: 30px;
             }
             .holder__star-list {
                position: absolute;
-               right: -145px;
-               top: -5px;
+               right: -45px;
+               top: -10px;
                li {
                   display: inline-block;
-                  margin-left: -25px;
+                  margin-left: -20px;
                }
                img {
                   position: static;
@@ -609,8 +645,25 @@
       }
    }
    .holder-slider__subtitle {
-      text-align: right;
-      padding: 132px 80px 0 0;
+      position: absolute;
+      right: 0;
+      top: 0;
+      padding-right: 15px;
+      .subtitle {
+         .headline-left {
+            font-size: 12px;
+            padding-left: 50px;
+            line-height: 16px;
+            &::before {
+               width: 40px;
+            }
+         }
+
+         .subtitle__head {
+            font-size: 14px;
+            padding-right: 5px;
+         }
+      }
    }
    .holder-slider__btn {
       text-align: center;
@@ -618,25 +671,24 @@
 }
 
 .holder-slider__info {
-   padding: 133px 80px 0 100px;
+   padding: 12px 12px 0 10px;
    display: flex;
    justify-content: space-between;
 }
 
 .holder-slider__info-item {
-   min-height: 200px;
-   margin-bottom: 66px;
+   margin-bottom: 70px;
    position: relative;
 }
 
 .holder-slider__info-subtitle {
    position: absolute;
-   font-size: 18px;
-   line-height: 22px;
-   letter-spacing: 8px;
+   font-size: 12px;
+   line-height: 14px;
+   letter-spacing: 2px;
    opacity: 0.5;
    transform: rotate(-90deg);
-   left: -97px;
+   left: -100px;
    width: 200px;
    height: 0;
    top: 97px;
@@ -646,16 +698,16 @@
 
 .holder-slider__info-title {
    position: relative;
-   font-size: 40px;
-   line-height: 36px;
+   font-size: 12px;
+   line-height: 16px;
    font-weight: 800;
-   padding-left: 40px;
+   padding-left: 18px;
    .info__title-span {
       position: absolute;
-      font-size: 14px;
+      font-size: 8px;
       line-height: 0;
       text-align: right;
-      letter-spacing: 5.25px;
+      letter-spacing: 0.6px;
       text-transform: uppercase;
       opacity: 0.75;
       bottom: -8px;
@@ -665,7 +717,7 @@
       display: inline-block;
       position: absolute;
       justify-content: end;
-      font-size: 14px;
+      font-size: 10px;
       line-height: 0;
       text-transform: uppercase;
       opacity: 0.75;
@@ -674,6 +726,7 @@
    }
 }
 
+//===========================shop======================//
 .shop {
    background-image: url(../image/img/ShopImageBg.png);
    background-repeat: no-repeat;
