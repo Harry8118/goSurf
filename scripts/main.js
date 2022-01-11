@@ -2,14 +2,15 @@ $(function () {
    $('.header__slider').slick({
       Infinite: true,
       fade: true,
+      arrows: true,
       prevArrow: '<img class="slider-arrows slider-arrows__left" src="/image/icons/arrow-left.svg" alt="">',
       nextArrow: '<img class="slider-arrows slider-arrows__right" src="/image/icons/arrow-right.svg" alt="">',
       asNavFor: '.slider-body',
    });
+
    $('.slider-body').slick({
       slidesToShow: 4,
       slideToScroll: 4,
-      arrows: false,
       asNavFor: '.header__slider',
    })
 
@@ -22,6 +23,26 @@ $(function () {
       nextArrow: '<img class="slider-arrows slider-arrows__right" src="/image/icons/arrow-right.svg" alt="">',
       asNavFor: '.slider-map',
       focusOnSelect: true,
+      responsive: [
+         {
+            breakpoint: 1024,
+            settings: {
+               slidesToShow: 3,
+            }
+         },
+         {
+            breakpoint: 480,
+            settings: {
+               slidesToShow: 2,
+            }
+         },
+         {
+            breakpoint: 600,
+            settings: {
+               slidesToShow: 2,
+            }
+         }
+      ]
    })
 
    $('.slider-map').slick({
@@ -32,14 +53,12 @@ $(function () {
       focusOnSelect: true,
    })
 
-   $('.holder__slider, .shop__slider').slick({
+   $('.holder__slider, .shop__slider',).slick({
       Infinite: true,
       fade: true,
       prevArrow: '<img class="slider-arrows slider-arrows__left" src="/image/icons/arrow-left.svg" alt="">',
       nextArrow: '<img class="slider-arrows slider-arrows__right" src="/image/icons/arrow-right.svg" alt="">',
    })
-
-
 
    $('<div class="quantity-nav"><div class="quantity-button quantity-up"><img src="./image/icons/Plus.svg" alt=""></div><div class="quantity-button quantity-down"><img src="./image/icons/minus.svg" alt=""></div></div>').insertAfter('.quantity input');
    $('.quantity').each(function () {
@@ -77,11 +96,11 @@ $(function () {
 
    $('.quantity-button').on('click', function () {
       let summ = ($('.nights').val()) * ($('.summ').data('night')) + ($('.guests').val() - 1) * ($('.summ').data('guests'))
-      $('.summ').html('$' + summ);
+      $('.summ').html('$ ' + summ);
    })
 
    let summ = $('.nights').val() * $('.summ').data('night') + ($('.guests').val() - 1) * $('.summ').data('guests')
-   $('.summ').html('$' + summ);
+   $('.summ').html('$ ' + summ);
 
 
 
@@ -89,10 +108,25 @@ $(function () {
       $(this).toggleClass('activ')
    })
 
+
+   $('.menu-btn').on('click', function () {
+      $('.menu').toggleClass('active')
+   })
+
+   new WOW().init();
+
 })
 
 
-// let button = document.getElementsByClassName('.quantity-button')
+var today = new Date()
 
-// let night = document.getElementsByClassName()
+var date = `${today.getMonth() + 1} | ${today.getFullYear()}`
+
+var day = today.getDate()
+
+var dt = document.getElementById('date')
+dt.innerText = date
+
+var dy = document.getElementById('day')
+dy.innerText = day
 

@@ -5,15 +5,17 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="icon" type="image" href="./image/icons/icons8-surf-64.png">
    <link rel="stylesheet" href="./css/main.css">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+   <link rel="stylesheet" href="css/animate.css">
    <link rel="stylesheet" href="./slick/slick.css">
    <title>goSurf</title>
 </head>
 
 <body>
 
-
+   <!-- =========================header================= -->
    <header class="header">
       <div class="container">
          <div class="header__title">
@@ -58,47 +60,61 @@
                   fill="white" />
             </svg>
          </div>
+         <div class="menu-btn">
+            <div class="menu-btn__line"></div>
+            <div class="menu-btn__line2"></div>
+            <div class="menu-btn__line3"></div>
+         </div>
+
+         <!-- header aside -->
          <div class="header__aside">
-            <div class="logo">
-               <a href="#">
-                  <img src="./image/img/Logo.svg" alt="">
-               </a>
-            </div>
-            <nav class="menu">
-               <ul class="menu__list">
-                  <li>
-                     <a href="#">
-                        <img src="./image/icons/Surf.svg" alt=""><span>surf</span>
-                     </a>
-                  </li>
-                  <li>
-                     <a href="#">
-                        <img src="./image/icons/Travel.svg" alt=""><span>Travel</span>
-                     </a>
-                  </li>
-                  <li>
-                     <a href="#">
-                        <img src="./image/icons/Camp.svg" alt=""><span>Sleep</span>
-                     </a>
-                  </li>
-                  <li>
-                     <a href="#">
-                        <img src="./image/icons/Shape.svg" alt=""><span>Shop</span>
-                     </a>
-                  </li>
-               </ul>
-            </nav>
-            <div class="header__search">
-               <img src="./image/icons/Search.svg" alt="">
-            </div>
-            <div class="header__date">
-               20
-               <span>06 | 2022</span>
-            </div>
-            <div class="header__location">
-               California
+            <div class="header__aside-inner">
+               <div class="logo">
+                  <a href="#">
+                     <img src="./image/img/Logo.svg" alt="">
+                  </a>
+               </div>
+               <nav class="menu">
+                  <ul class="menu__list">
+                     <li>
+                        <a href="#">
+                           <img src="./image/icons/Surf.svg" alt=""><span>surf</span>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="#">
+                           <img src="./image/icons/Travel.svg" alt=""><span>Travel</span>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="#">
+                           <img src="./image/icons/Camp.svg" alt=""><span>Sleep</span>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="#">
+                           <img src="./image/icons/Shape.svg" alt=""><span>Shop</span>
+                        </a>
+                     </li>
+                  </ul>
+               </nav>
+               <div class="search__loc__date">
+                  <div class="header__search">
+                     <img src="./image/icons/Search.svg" alt="">
+                  </div>
+                  <div class="header__date">
+                     <span id="day"></span>
+                     <span id="date"></span>
+                  </div>
+                  <div class="header__location">
+                     <img src="../image/icons/h-nav_loc.svg" alt="Location logo" />
+                     <a target="_blank" href="https://goo.gl/maps/9h67hs1u4oPnsztA9">California</a>
+                  </div>
+               </div>
             </div>
          </div>
+
+         <!-- header slider -->
          <div class="header__slider">
             <div class="header__slider-item slider-item">
                <div class="slider-item__info">
@@ -145,6 +161,7 @@
                </div>
             </div>
          </div>
+         <!-- slider-dotshead -->
          <div class="slider-dotshead">
             <div class="slider-body">
                <div class="slider-dots__item">
@@ -176,15 +193,16 @@
       </div>
    </header>
 
-   <!-- <section class="surf">
+   <!-- =========================surf================= -->
+   <section class="surf">
       <div class="container">
+         <img class="surf__loc-img" src="./image/icons/surf_POI.svg" alt="">
          <div class="title">
             <span>
                surf
                <h3>surf</h3>
             </span>
          </div>
-
          <div class="surf__subtitle">
             <div class="subtitle">
                <div class="headline-left">Current location</div>
@@ -442,93 +460,108 @@
                </div>
             </div>
          </div>
-
          <div class="surf-slide">
-            <div class="surf-box" style="background-image: url(../image/img/slide-1.jpg);">
-               <div class="surf-box__inner">
-                  <div class="surf-box__inner-title">Malibu<br>Beach</div>
-                  <div class="surf-box__inner-location">California <span>|</span> USA</div>
-                  <div class="surf-box__inner-btn">
-                     <a class="btn" href="#">
-                        view <span>serf</span>
-                     </a>
+            <div class="surf-box">
+               <div class="surf-box__wrapper" style="background-image: url(../image/img/slide-1.jpg);">
+                  <div class="surf-box__inner">
+                     <div class="surf-box__inner-title">Malibu<br>Beach</div>
+                     <div class="surf-box__inner-location">California <span>|</span> USA</div>
+                     <div class="surf-box__inner-btn">
+                        <a class="btn" href="#">
+                           view <span>serf</span>
+                        </a>
+                     </div>
                   </div>
                </div>
             </div>
-            <div class="surf-box" style="background-image: url(../image/img/slide-2.jpg);">
-               <div class="surf-box__inner">
-                  <div class="surf-box__inner-title">Airlie<br>Beach</div>
-                  <div class="surf-box__inner-location">Queensland <span>|</span> Australia</div>
-                  <div class="surf-box__inner-btn">
-                     <a class="btn" href="#">
-                        view <span>serf</span>
-                     </a>
+            <div class="surf-box">
+               <div class="surf-box__wrapper" style="background-image: url(../image/img/slide-2.jpg);">
+                  <div class="surf-box__inner">
+                     <div class="surf-box__inner-title">Airlie<br>Beach</div>
+                     <div class="surf-box__inner-location">Queensland <span>|</span> Australia</div>
+                     <div class="surf-box__inner-btn">
+                        <a class="btn" href="#">
+                           view <span>serf</span>
+                        </a>
+                     </div>
                   </div>
                </div>
             </div>
-            <div class="surf-box" style="background-image: url(../image/img/slide-3.jpg);">
-               <div class="surf-box__inner">
-                  <div class="surf-box__inner-title">Cloud<br>Nine</div>
-                  <div class="surf-box__inner-location">Siargao <span>|</span> Philippines</div>
-                  <div class="surf-box__inner-btn">
-                     <a class="btn" href="#">
-                        view <span>serf</span>
-                     </a>
+            <div class="surf-box">
+               <div class="surf-box__wrapper" style="background-image: url(../image/img/slide-3.jpg);">
+                  <div class="surf-box__inner">
+                     <div class="surf-box__inner-title">Cloud<br>Nine</div>
+                     <div class="surf-box__inner-location">Siargao <span>|</span> Philippines</div>
+                     <div class="surf-box__inner-btn">
+                        <a class="btn" href="#">
+                           view <span>serf</span>
+                        </a>
+                     </div>
                   </div>
                </div>
             </div>
-            <div class="surf-box" style="background-image: url(../image/img/slide-4.jpg);">
-               <div class="surf-box__inner">
-                  <div class="surf-box__inner-title">Vieux Boucau</div>
-                  <div class="surf-box__inner-location">Hossegor <span>|</span> France</div>
-                  <div class="surf-box__inner-btn">
-                     <a class="btn" href="#">
-                        view <span>serf</span>
-                     </a>
+            <div class="surf-box">
+               <div class="surf-box__wrapper" style="background-image: url(../image/img/slide-4.jpg);">
+                  <div class="surf-box__inner">
+                     <div class="surf-box__inner-title">Vieux<br>Boucau</div>
+                     <div class="surf-box__inner-location">Hossegor <span>|</span> France</div>
+                     <div class="surf-box__inner-btn">
+                        <a class="btn" href="#">
+                           view <span>serf</span>
+                        </a>
+                     </div>
                   </div>
                </div>
             </div>
-            <div class="surf-box" style="background-image: url(../image/img/slide-1.jpg);">
-               <div class="surf-box__inner">
-                  <div class="surf-box__inner-title">Malibu<br>Beach</div>
-                  <div class="surf-box__inner-location">California <span>|</span> USA</div>
-                  <div class="surf-box__inner-btn">
-                     <a class="btn" href="#">
-                        view <span>serf</span>
-                     </a>
+            <div class="surf-box">
+               <div class="surf-box__wrapper" style="background-image: url(../image/img/slide-1.jpg);">
+                  <div class="surf-box__inner">
+                     <div class="surf-box__inner-title">Malibu<br>Beach</div>
+                     <div class="surf-box__inner-location">California <span>|</span> USA</div>
+                     <div class="surf-box__inner-btn">
+                        <a class="btn" href="#">
+                           view <span>serf</span>
+                        </a>
+                     </div>
                   </div>
                </div>
             </div>
-            <div class="surf-box" style="background-image: url(../image/img/slide-2.jpg);">
-               <div class="surf-box__inner">
-                  <div class="surf-box__inner-title">Airlie<br>Beach</div>
-                  <div class="surf-box__inner-location">Queensland <span>|</span> Australia</div>
-                  <div class="surf-box__inner-btn">
-                     <a class="btn" href="#">
-                        view <span>serf</span>
-                     </a>
+            <div class="surf-box">
+               <div class="surf-box__wrapper" style="background-image: url(../image/img/slide-2.jpg);">
+                  <div class="surf-box__inner">
+                     <div class="surf-box__inner-title">Airlie<br>Beach</div>
+                     <div class="surf-box__inner-location">Queensland <span>|</span> Australia</div>
+                     <div class="surf-box__inner-btn">
+                        <a class="btn" href="#">
+                           view <span>serf</span>
+                        </a>
+                     </div>
                   </div>
                </div>
             </div>
-            <div class="surf-box" style="background-image: url(../image/img/slide-3.jpg);">
-               <div class="surf-box__inner">
-                  <div class="surf-box__inner-title">Cloud<br>Nine</div>
-                  <div class="surf-box__inner-location">Siargao <span>|</span> Philippines</div>
-                  <div class="surf-box__inner-btn">
-                     <a class="btn" href="#">
-                        view <span>serf</span>
-                     </a>
+            <div class="surf-box">
+               <div class="surf-box__wrapper" style="background-image: url(../image/img/slide-3.jpg);">
+                  <div class="surf-box__inner">
+                     <div class="surf-box__inner-title">Cloud<br>Nine</div>
+                     <div class="surf-box__inner-location">Siargao <span>|</span> Philippines</div>
+                     <div class="surf-box__inner-btn">
+                        <a class="btn" href="#">
+                           view <span>serf</span>
+                        </a>
+                     </div>
                   </div>
                </div>
             </div>
-            <div class="surf-box" style="background-image: url(../image/img/slide-4.jpg);">
-               <div class="surf-box__inner">
-                  <div class="surf-box__inner-title">Vieux<br>Boucau</div>
-                  <div class="surf-box__inner-location">Hossegor <span>|</span> France</div>
-                  <div class="surf-box__inner-btn">
-                     <a class="btn" href="#">
-                        view <span>serf</span>
-                     </a>
+            <div class="surf-box">
+               <div class="surf-box__wrapper" style="background-image: url(../image/img/slide-4.jpg);">
+                  <div class="surf-box__inner">
+                     <div class="surf-box__inner-title">Vieux<br>Boucau</div>
+                     <div class="surf-box__inner-location">Hossegor <span>|</span> France</div>
+                     <div class="surf-box__inner-btn">
+                        <a class="btn" href="#">
+                           view <span>serf</span>
+                        </a>
+                     </div>
                   </div>
                </div>
             </div>
@@ -536,8 +569,10 @@
       </div>
    </section>
 
+   <!-- =========================holder=================  -->
    <section class="holder">
       <div class="container">
+         <img class="bg-img2" src="./image/img/cocktail_PNG33.png" alt="">
          <div class="title">
             <span>
                Travel
@@ -546,7 +581,8 @@
          </div>
          <div class="holder__slider">
             <div class="holder__slider-item holder-slider">
-               <div class="holder-slider__head" style="background-image: url(./image/img/TravelImageBg.png);">
+               <div class="holder-slider__head">
+                  <img class="holder-bgimg" src="./image/img/TravelImageBg.png" alt="">
                   <div class="holder-slider__subtitle">
                      <div class="subtitle">
                         <div class="headline-left">Shore</div>
@@ -554,7 +590,8 @@
                      </div>
                   </div>
                </div>
-               <div class="holder-slider__descr" style="background-image: url(./image/img/Bitmap.png);">
+               <div class="holder-slider__descr">
+                  <img class="bitmap-img" src="./image/img/Bitmap.png" alt="">
                   <div class="descr">
                      <div class="headline-right">Airline</div>
                      <div class="descr__head">Virgin Australia <img src="./image/icons/virgin.svg" alt=""></div>
@@ -571,11 +608,11 @@
                   </div>
                   <div class="holder-slider__info-item">
                      <div class="holder-slider__info-subtitle">Travel Time</div>
-                     <div class="holder-slider__info-title">23 Hours5<br>Minutes</div>
+                     <div class="holder-slider__info-title">23 Hours<br>5 Minutes</div>
                   </div>
                   <div class="holder-slider__info-item">
                      <div class="holder-slider__info-subtitle">Pricing</div>
-                     <div class="holder-slider__info-title">$1.976USD
+                     <div class="holder-slider__info-title">$ 1.976USD
                         <span class="info__title-span">Round Trip</span>
                      </div>
                   </div>
@@ -586,8 +623,10 @@
                   </a>
                </div>
             </div>
+
             <div class="holder__slider-item holder-slider">
-               <div class="holder-slider__head" style="background-image: url(./image/img/TravelImageBg.png);">
+               <div class="holder-slider__head">
+                  <img class="holder-bgimg" src="./image/img/TravelImageBg.png" alt="">
                   <div class="holder-slider__subtitle">
                      <div class="subtitle">
                         <div class="headline-left">Shore</div>
@@ -595,7 +634,8 @@
                      </div>
                   </div>
                </div>
-               <div class="holder-slider__descr" style="background-image: url(./image/img/Bitmap.png);">
+               <div class="holder-slider__descr">
+                  <img class="bitmap-img" src="./image/img/Bitmap.png" alt="">
                   <div class="descr">
                      <div class="headline-right">Airline</div>
                      <div class="descr__head">Virgin Australia <img src="./image/icons/virgin.svg" alt=""></div>
@@ -627,8 +667,10 @@
                   </a>
                </div>
             </div>
+
             <div class="holder__slider-item holder-slider">
-               <div class="holder-slider__head" style="background-image: url(./image/img/TravelImageBg.png);">
+               <div class="holder-slider__head">
+                  <img class="holder-bgimg" src="./image/img/TravelImageBg.png" alt="">
                   <div class="holder-slider__subtitle">
                      <div class="subtitle">
                         <div class="headline-left">Shore</div>
@@ -636,7 +678,8 @@
                      </div>
                   </div>
                </div>
-               <div class="holder-slider__descr" style="background-image: url(./image/img/Bitmap.png);">
+               <div class="holder-slider__descr">
+                  <img class="bitmap-img" src="./image/img/Bitmap.png" alt="">
                   <div class="descr">
                      <div class="headline-right">Airline</div>
                      <div class="descr__head">Virgin Australia <img src="./image/icons/virgin.svg" alt=""></div>
@@ -668,8 +711,10 @@
                   </a>
                </div>
             </div>
+
             <div class="holder__slider-item holder-slider">
-               <div class="holder-slider__head" style="background-image: url(./image/img/TravelImageBg.png);">
+               <div class="holder-slider__head">
+                  <img class="holder-bgimg" src="./image/img/TravelImageBg.png" alt="">
                   <div class="holder-slider__subtitle">
                      <div class="subtitle">
                         <div class="headline-left">Shore</div>
@@ -677,7 +722,8 @@
                      </div>
                   </div>
                </div>
-               <div class="holder-slider__descr" style="background-image: url(./image/img/Bitmap.png);">
+               <div class="holder-slider__descr">
+                  <img class="bitmap-img" src="./image/img/Bitmap.png" alt="">
                   <div class="descr">
                      <div class="headline-right">Airline</div>
                      <div class="descr__head">Virgin Australia <img src="./image/icons/virgin.svg" alt=""></div>
@@ -709,12 +755,15 @@
                   </a>
                </div>
             </div>
+
          </div>
       </div>
    </section>
 
+   <!-- =========================holder sleep=================  -->
    <section class="holder sleep">
       <div class="container">
+         <img class="bg-img2 frangi" src="./image/img/Frangipani.png" alt="">
          <div class="title">
             <span>
                Sleep
@@ -724,7 +773,8 @@
          <div class="holder__slider">
 
             <div class="holder__slider-item holder-slider">
-               <div class="holder-slider__head" style="background-image: url(./image/img/Sleep\ Image.png);">
+               <div class="holder-slider__head">
+                  <img class="holder-bgimg" src="./image/img/Sleep Image.png" alt="">
                   <div class="holder-slider__subtitle">
                      <div class="subtitle">
                         <div class="headline-left">Resorts</div>
@@ -732,7 +782,200 @@
                      </div>
                   </div>
                </div>
-               <div class="holder-slider__descr" style="background-image: url(./image/img/Group\ 7.png);">
+               <div class="holder-slider__descr">
+                  <img class="bitmap-img homack" src="./image/img/Group 7.png" alt="">
+                  <div class="descr">
+                     <div class="headline-right">Rating</div>
+                     <div class="descr__head">Excellent
+                        <ul class="holder__star-list">
+                           <li><img src="./image/icons/star3.svg" alt=""></li>
+                           <li><img src="./image/icons/star3.svg" alt=""></li>
+                           <li><img src="./image/icons/star3.svg" alt=""></li>
+                           <li><img src="./image/icons/star3.svg" alt=""></li>
+                           <li><img src="./image/icons/star3.svg" alt=""></li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+               <div class="holder-slider__info">
+                  <div class="holder-slider__info-item">
+                     <div class="holder-slider__info-subtitle">Resort</div>
+                     <div class="holder-slider__info-title">Auberge<br>Australia</div>
+                  </div>
+                  <div class="holder-slider__info-item">
+                     <div class="holder-slider__info-subtitle"># of Nights</div>
+                     <div class="holder-slider__info-title">
+                        <div class="quantity">
+                           <input class="nights" type="number" min="1" max="9" step="1" value="4">
+                        </div>
+                        Nights
+                     </div>
+                  </div>
+                  <div class="holder-slider__info-item">
+                     <div class="holder-slider__info-subtitle"># of Guests</div>
+                     <div class="holder-slider__info-title">
+                        <div class="quantity">
+                           <input class="guests" type="number" min="1" max="9" step="1" value="5">
+                        </div>
+                        Guests
+                     </div>
+                  </div>
+                  <div class="holder-slider__info-item">
+                     <div class="holder-slider__info-subtitle">Pricing</div>
+                     <div class="holder-slider__info-title">
+                        <span class="summ" data-night="55" data-guests="55"></span>
+                        USD
+                        <span class="info__title-prise-span">Per Night</span>
+                     </div>
+                  </div>
+               </div>
+               <div class="holder-slider__btn">
+                  <a class="btn" href="#">
+                     Book <span>Stay</span>
+                  </a>
+               </div>
+            </div>
+
+            <div class="holder__slider-item holder-slider">
+               <div class="holder-slider__head">
+                  <img class="holder-bgimg" src="./image/img/Sleep Image.png" alt="">
+                  <div class="holder-slider__subtitle">
+                     <div class="subtitle">
+                        <div class="headline-left">Resorts</div>
+                        <div class="subtitle__head">Auberge <span>|</span> Australia</div>
+                     </div>
+                  </div>
+               </div>
+               <div class="holder-slider__descr">
+                  <img class="bitmap-img" src="./image/img/Group 7.png" alt="">
+                  <div class="descr">
+                     <div class="headline-right">Rating</div>
+                     <div class="descr__head">Excellent
+                        <ul class="holder__star-list">
+                           <li><img src="./image/icons/star3.svg" alt=""></li>
+                           <li><img src="./image/icons/star3.svg" alt=""></li>
+                           <li><img src="./image/icons/star3.svg" alt=""></li>
+                           <li><img src="./image/icons/star3.svg" alt=""></li>
+                           <li><img src="./image/icons/star3.svg" alt=""></li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+               <div class="holder-slider__info">
+                  <div class="holder-slider__info-item">
+                     <div class="holder-slider__info-subtitle">Resort</div>
+                     <div class="holder-slider__info-title">Auberge<br>Australia</div>
+                  </div>
+                  <div class="holder-slider__info-item">
+                     <div class="holder-slider__info-subtitle"># of Nights</div>
+                     <div class="holder-slider__info-title">
+                        <div class="quantity">
+                           <input class="nights" type="number" min="1" max="9" step="1" value="4">
+                        </div>
+                        Nights
+                     </div>
+                  </div>
+                  <div class="holder-slider__info-item">
+                     <div class="holder-slider__info-subtitle"># of Guests</div>
+                     <div class="holder-slider__info-title">
+                        <div class="quantity">
+                           <input class="guests" type="number" min="1" max="9" step="1" value="5">
+                        </div>
+                        Guests
+                     </div>
+                  </div>
+                  <div class="holder-slider__info-item">
+                     <div class="holder-slider__info-subtitle">Pricing</div>
+                     <div class="holder-slider__info-title">
+                        <span class="summ" data-night="55" data-guests="55"></span>
+                        USD
+                        <span class="info__title-prise-span">Per Night</span>
+                     </div>
+                  </div>
+               </div>
+               <div class="holder-slider__btn">
+                  <a class="btn" href="#">
+                     Book <span>Stay</span>
+                  </a>
+               </div>
+            </div>
+
+            <div class="holder__slider-item holder-slider">
+               <div class="holder-slider__head">
+                  <img class="holder-bgimg" src="./image/img/Sleep Image.png" alt="">
+                  <div class="holder-slider__subtitle">
+                     <div class="subtitle">
+                        <div class="headline-left">Resorts</div>
+                        <div class="subtitle__head">Auberge <span>|</span> Australia</div>
+                     </div>
+                  </div>
+               </div>
+               <div class="holder-slider__descr">
+                  <img class="bitmap-img" src="./image/img/Group 7.png" alt="">
+                  <div class="descr">
+                     <div class="headline-right">Rating</div>
+                     <div class="descr__head">Excellent
+                        <ul class="holder__star-list">
+                           <li><img src="./image/icons/star3.svg" alt=""></li>
+                           <li><img src="./image/icons/star3.svg" alt=""></li>
+                           <li><img src="./image/icons/star3.svg" alt=""></li>
+                           <li><img src="./image/icons/star3.svg" alt=""></li>
+                           <li><img src="./image/icons/star3.svg" alt=""></li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+               <div class="holder-slider__info">
+                  <div class="holder-slider__info-item">
+                     <div class="holder-slider__info-subtitle">Resort</div>
+                     <div class="holder-slider__info-title">Auberge<br>Australia</div>
+                  </div>
+                  <div class="holder-slider__info-item">
+                     <div class="holder-slider__info-subtitle"># of Nights</div>
+                     <div class="holder-slider__info-title">
+                        <div class="quantity">
+                           <input class="nights" type="number" min="1" max="9" step="1" value="4">
+                        </div>
+                        Nights
+                     </div>
+                  </div>
+                  <div class="holder-slider__info-item">
+                     <div class="holder-slider__info-subtitle"># of Guests</div>
+                     <div class="holder-slider__info-title">
+                        <div class="quantity">
+                           <input class="guests" type="number" min="1" max="9" step="1" value="5">
+                        </div>
+                        Guests
+                     </div>
+                  </div>
+                  <div class="holder-slider__info-item">
+                     <div class="holder-slider__info-subtitle">Pricing</div>
+                     <div class="holder-slider__info-title">
+                        <span class="summ" data-night="55" data-guests="55"></span>
+                        USD
+                        <span class="info__title-prise-span">Per Night</span>
+                     </div>
+                  </div>
+               </div>
+               <div class="holder-slider__btn">
+                  <a class="btn" href="#">
+                     Book <span>Stay</span>
+                  </a>
+               </div>
+            </div>
+
+            <div class="holder__slider-item holder-slider">
+               <div class="holder-slider__head">
+                  <img class="holder-bgimg" src="./image/img/Sleep Image.png" alt="">
+                  <div class="holder-slider__subtitle">
+                     <div class="subtitle">
+                        <div class="headline-left">Resorts</div>
+                        <div class="subtitle__head">Auberge <span>|</span> Australia</div>
+                     </div>
+                  </div>
+               </div>
+               <div class="holder-slider__descr">
+                  <img class="bitmap-img" src="./image/img/Group 7.png" alt="">
                   <div class="descr">
                      <div class="headline-right">Rating</div>
                      <div class="descr__head">Excellent
@@ -789,8 +1032,9 @@
       </div>
    </section>
 
-   <section class="shop">
-      <div class="container">
+   <!-- =========================shop=================  -->
+   <div class="container">
+      <section class="shop">
          <div class="title">
             <span>
                shop
@@ -816,7 +1060,7 @@
                            <li><img src="./image/icons/star3.svg" alt=""></li>
                         </ul>
                      </div>
-                     <p>$799<sup>99</sup></p>
+                     <p>$ 799<sup>99</sup></p>
                      <div class="shop__slider__btn">
                         <a class="btn" href="#">
                            drop <span>in</span>
@@ -899,7 +1143,7 @@
                            <li><img src="./image/icons/star3.svg" alt=""></li>
                         </ul>
                      </div>
-                     <p>$799<sup>99</sup></p>
+                     <p>$ 799<sup>99</sup></p>
                      <div class="shop__slider__btn">
                         <a class="btn" href="#">
                            drop <span>in</span>
@@ -965,19 +1209,20 @@
                </div>
             </div>
          </div>
-      </div>
-   </section>
-   <footer class="footer">
-      <a class="btn" href="#">
-         go <span>surf</span>
-      </a>
-      <div class="footer__copyrigt">
-         © Go-Surf 2022. All Rights Reserved.
-      </div>
-   </footer>
-   </div>  -->
+      </section>
+      <!-- =========================footer=================  -->
+      <footer class="footer">
+         <a class="btn" href="#">
+            go <span>surf</span>
+         </a>
+         <div class="footer__copyrigt">
+            © Go-Surf 2022. All Rights Reserved.
+         </div>
+      </footer>
+   </div>
 
    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+   <script src="js/wow.min.js"></script>
    <script src="./slick/slick.min.js"></script>
    <script src="./slick/slick.js"></script>
    <script src="/scripts/main.js"></script>
