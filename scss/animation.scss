@@ -4,6 +4,24 @@
    animation-duration: 5s;
 }
 
+.animate__fadeInRightBig,
+.animate__fadeInUpBig,
+.animate__flipInY,
+.animate__fadeInLeft,
+.animate__fadeInUp,
+.animate__zoomInDown,
+.animate__fadeInLeftBig {
+   animation-iteration-count: 1;
+}
+
+.animate__flipInY {
+   animation-delay: 1.5s;
+}
+
+.shop__slider-info {
+   animation-delay: 1s;
+}
+
 .animate__fadeIn {
    animation-delay: 0.2s;
    animation-iteration-count: 1;

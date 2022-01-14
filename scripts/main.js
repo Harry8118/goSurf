@@ -96,11 +96,11 @@ $(function () {
 
    $('.quantity-button').on('click', function () {
       let summ = ($('.nights').val()) * ($('.summ').data('night')) + ($('.guests').val() - 1) * ($('.summ').data('guests'))
-      $('.summ').html('$ ' + summ);
+      $('.summ').html('$' + summ);
    })
 
-   let summ = $('.nights').val() * $('.summ').data('night') + ($('.guests').val() - 1) * $('.summ').data('guests')
-   $('.summ').html('$ ' + summ);
+   let summ = $('.nights').val() * $('.summ ').data('night') + ($('.guests').val() - 1) * $('.summ').data('guests')
+   $('.summ').html('$' + summ);
 
 
 

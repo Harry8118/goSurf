@@ -2,6 +2,7 @@
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 *,
@@ -20,6 +21,8 @@ body {
   background-color: #171919;
   color: #fff;
   text-transform: uppercase;
+  min-width: 375px;
+  overflow-x: hidden;
 }
 
 a {
@@ -249,6 +252,27 @@ input[type=number] {
           animation-duration: 5s;
 }
 
+.animate__fadeInRightBig,
+.animate__fadeInUpBig,
+.animate__flipInY,
+.animate__fadeInLeft,
+.animate__fadeInUp,
+.animate__zoomInDown,
+.animate__fadeInLeftBig {
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+}
+
+.animate__flipInY {
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
+}
+
+.shop__slider-info {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
 .animate__fadeIn {
   -webkit-animation-delay: 0.2s;
           animation-delay: 0.2s;
@@ -335,14 +359,13 @@ input[type=number] {
 
 .slider-item__info-subtitle {
   position: absolute;
-  margin-bottom: 5px;
-  bottom: 205px;
+  bottom: 160px;
   right: 0;
 }
 
 .slider-item__info-title {
   position: absolute;
-  width: 210px;
+  width: 280px;
   line-height: 1.2;
   font-weight: 800;
   font-size: 40px;
@@ -452,6 +475,9 @@ input[type=number] {
   padding-top: 6px;
   margin-bottom: 20px;
   text-transform: capitalize;
+}
+.header__aside .header__aside-inner .menu .menu__list li a:hover {
+  opacity: 0.5;
 }
 .header__aside .header__aside-inner .search__loc__date {
   position: relative;
@@ -897,6 +923,9 @@ input[type=number] {
   width: 40px;
 }
 
+.holder__slider .holder-slider__head {
+  position: relative;
+}
 .holder__slider .holder-slider__head .holder-bgimg {
   background-repeat: no-repeat;
   background-position: top left;
@@ -1274,6 +1303,12 @@ input[type=number] {
 .footer .btn span::before {
   width: 13px;
   left: -10px;
+}
+.footer .footer-arrows {
+  float: right;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  padding-left: 50px;
 }
 
 .footer__copyrigt {

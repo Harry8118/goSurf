@@ -41,14 +41,13 @@
 
 .slider-item__info-subtitle {
    position: absolute;
-   margin-bottom: 5px;
-   bottom: 205px;
+   bottom: 160px;
    right: 0;
 }
 
 .slider-item__info-title {
    position: absolute;
-   width: 210px;
+   width: 280px;
    line-height: 1.2;
    font-weight: 800;
    font-size: 40px;
@@ -151,6 +150,14 @@
                padding-top: 6px;
                margin-bottom: 20px;
                text-transform: capitalize;
+            }
+         }
+
+         .menu__list {
+            li {
+               a:hover {
+                  opacity: 0.5;
+               }
             }
          }
       }
@@ -610,6 +617,7 @@
 
 .holder__slider {
    .holder-slider__head {
+      position: relative;
       .holder-bgimg {
          background-repeat: no-repeat;
          background-position: top left;
@@ -996,6 +1004,12 @@
             left: -10px;
          }
       }
+   }
+
+   .footer-arrows {
+      float: right;
+      transform: rotate(180deg);
+      padding-left: 50px;
    }
 }
 
