@@ -4,7 +4,6 @@
 @import "animation";
 
 //============================header========================//
-
 .header {
    position: relative;
    height: 100vh;
@@ -15,11 +14,15 @@
    .header__slider {
       position: relative;
       .header__slider-item {
-         background-image: url(../image/img/header-bg.jpg);
          background-size: cover;
          background-position: center;
          background-repeat: no-repeat;
          height: 100vh;
+         .masck {
+            height: 100vh;
+            width: 100%;
+            background: rgba(#1c2121, 0.75);
+         }
       }
    }
 
@@ -105,7 +108,7 @@
 // header aside
 .header__aside {
    position: relative;
-
+   user-select: none;
    .header__aside-inner {
       position: absolute;
       display: flex;
@@ -486,7 +489,7 @@
       border-left: 12px solid transparent;
       border-right: 12px solid transparent;
       bottom: -21px;
-      left: calc(50% - 1px);
+      left: calc(50%);
       border-bottom-left-radius: 10px;
       border-bottom-right-radius: 10px;
    }
