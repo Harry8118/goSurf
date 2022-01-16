@@ -1,41 +1,60 @@
-.animate__animated{
+.animate__animated {
    animation: infinite;
    animation-delay: 0.2s;
+   animation-duration: 5s;
 }
 
-.animate__fadeIn{
-   animation-delay: 1s;
+.animate__fadeInRightBig,
+.animate__fadeInUpBig,
+.animate__flipInY,
+.animate__fadeInLeft,
+.animate__fadeInUp,
+.animate__zoomInDown,
+.animate__fadeInLeftBig {
    animation-iteration-count: 1;
 }
 
-.anim_to{
+.animate__flipInY {
+   animation-delay: 0.5;
+}
+
+.shop__slider-info {
+   animation-delay: 1s;
+}
+
+.animate__fadeIn {
+   animation-delay: 0.2s;
+   animation-iteration-count: 1;
+}
+
+.anim_to {
    animation-delay: 2s;
    animation-iteration-count: 1;
 }
 
-.anim_tree{
+.anim_tree {
    animation-delay: 3s;
    animation-iteration-count: 1;
 }
 
-.anim_fore{
+.anim_fore {
    animation-delay: 4s;
    animation-iteration-count: 1;
 }
 
-.anim_five{
+.anim_five {
    animation-delay: 5s;
    animation-iteration-count: 1;
 }
 
-.line-animation{
+.line-animation {
    stroke-dashoffset: 600;
    stroke-dasharray: 600;
-   animation: animdash 5s infinite 6s; 
+   animation: animdash 5s infinite 6s;
 }
 
 @keyframes animdash {
-   to{
+   to {
       stroke-dashoffset: 0;
    }
 }
