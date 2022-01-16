@@ -174,9 +174,11 @@
          height: 150px;
          .header__search {
             cursor: pointer;
+            display: none;
          }
 
          .header__date {
+            text-align: center;
             #day {
                font-weight: 800;
                font-size: 40px;
@@ -349,14 +351,6 @@
                display: block;
             }
          }
-      }
-   }
-   .slick-current {
-      .surf-box__inner-btn {
-         display: block;
-      }
-      .surf-box__inner {
-         background: rgba(#1c2121, 0.3);
       }
    }
 }

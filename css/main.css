@@ -196,6 +196,10 @@ p {
           transform: translateY(-50%);
 }
 
+.btn:hover {
+  opacity: 0.5;
+}
+
 .quantity {
   display: inline-block;
 }
@@ -279,8 +283,8 @@ input[type=number] {
 }
 
 .animate__flipInY {
-  -webkit-animation-delay: 1.5s;
-          animation-delay: 1.5s;
+  -webkit-animation-delay: 0.5;
+          animation-delay: 0.5;
 }
 
 .shop__slider-info {
@@ -520,6 +524,10 @@ input[type=number] {
 }
 .header__aside .header__aside-inner .search__loc__date .header__search {
   cursor: pointer;
+  display: none;
+}
+.header__aside .header__aside-inner .search__loc__date .header__date {
+  text-align: center;
 }
 .header__aside .header__aside-inner .search__loc__date .header__date #day {
   font-weight: 800;
@@ -682,12 +690,6 @@ input[type=number] {
 }
 .surf .surf-box .surf-box__inner:hover .surf-box__inner-btn {
   display: block;
-}
-.surf .slick-current .surf-box__inner-btn {
-  display: block;
-}
-.surf .slick-current .surf-box__inner {
-  background: rgba(28, 33, 33, 0.3);
 }
 
 .slick-slide:nth-child(4n+1) .surf-box {
