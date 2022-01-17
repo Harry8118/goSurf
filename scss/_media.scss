@@ -398,6 +398,20 @@
       }
    }
 }
+
+@media (max-height: 425px) and (max-width: 800px) {
+   .header__map {
+      display: none;
+      svg {
+         position: absolute;
+         width: 300px;
+         height: 200px;
+         top: 0;
+         right: 0;
+         z-index: 3;
+      }
+   }
+}
 //=====================media768px===========================//
 @media (min-width: 768px) {
    // header aside
