@@ -166,6 +166,10 @@
       .quantity input {
          width: 14px;
       }
+
+      .slick-dots {
+         left: 44%;
+      }
    }
 
    //======================shop=============================//
@@ -682,6 +686,11 @@
                padding: 8px 45px 8px 16px;
             }
          }
+      }
+
+      .slick-dots {
+         top: 66%;
+         left: 45%;
       }
    }
 
@@ -1337,6 +1346,10 @@
             }
          }
       }
+
+      .slick-dots {
+         display: none !important;
+      }
    }
 
    //=======================shop===============//
@@ -1523,6 +1536,10 @@
                }
             }
          }
+      }
+
+      .slick-dots {
+         display: none !important;
       }
    }
 }

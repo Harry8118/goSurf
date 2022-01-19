@@ -937,7 +937,7 @@ input[type=number] {
   width: 150px;
   position: absolute;
   right: 0;
-  top: 35%;
+  top: 40%;
 }
 .holder .headline-right {
   font-size: 12px;
@@ -1006,6 +1006,36 @@ input[type=number] {
 }
 .holder__slider .holder-slider__btn {
   text-align: center;
+}
+.holder__slider .slick-dots {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  top: 60%;
+  left: 40%;
+}
+.holder__slider .slick-dots li {
+  margin-left: 5px;
+}
+.holder__slider .slick-dots li button {
+  border: none;
+  border-radius: 50%;
+  height: 10px;
+  width: 10px;
+  padding: 0;
+  margin: 0;
+  font-size: 0;
+  background-color: #fff;
+}
+.holder__slider .slick-dots .slick-active button {
+  background-color: #4af6cd;
 }
 
 .holder-slider__info {
@@ -1311,12 +1341,41 @@ input[type=number] {
 .shop .shop__slider .shop__slider-content .shop__extras-box-img img {
   width: 55px;
 }
+.shop .slick-dots {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  left: 46%;
+}
+.shop .slick-dots li {
+  margin-left: 5px;
+}
+.shop .slick-dots li button {
+  border: none;
+  border-radius: 50%;
+  height: 10px;
+  width: 10px;
+  padding: 0;
+  margin: 0;
+  font-size: 0;
+  background-color: #fff;
+}
+.shop .slick-dots .slick-active button {
+  background-color: #4af6cd;
+}
 
 .footer {
   text-align: center;
 }
 .footer .btn {
-  padding-bottom: 30px;
+  padding: 0 0 30px 40px;
 }
 .footer .btn span {
   text-transform: uppercase;
@@ -1479,6 +1538,9 @@ input[type=number] {
   }
   .holder .quantity input {
     width: 14px;
+  }
+  .holder .slick-dots {
+    left: 44%;
   }
 
   .shop {
@@ -1926,6 +1988,10 @@ input[type=number] {
   .holder .holder-slider__btn .btn span {
     font-size: 18px;
     padding: 8px 45px 8px 16px;
+  }
+  .holder .slick-dots {
+    top: 66%;
+    left: 45%;
   }
 
   .shop {
@@ -2479,6 +2545,9 @@ input[type=number] {
     height: 28px;
     width: 18px;
   }
+  .holder .slick-dots {
+    display: none !important;
+  }
 
   .shop {
     padding: 120px 0 120px 0;
@@ -2631,6 +2700,9 @@ input[type=number] {
   }
   .shop .shop__slider .shop__slider-content .shop__extras-box-img img {
     width: 100px;
+  }
+  .shop .slick-dots {
+    display: none !important;
   }
 }
 @media (min-width: 1200px) {
