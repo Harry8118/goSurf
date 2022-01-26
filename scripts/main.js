@@ -56,6 +56,7 @@ $(function () {
    $('.holder__slider, .shop__slider',).slick({
       Infinite: true,
       fade: true,
+      dots: true,
       prevArrow: '<img class="slider-arrows slider-arrows__left" src="/image/icons/arrow-left.svg" alt="">',
       nextArrow: '<img class="slider-arrows slider-arrows__right" src="/image/icons/arrow-right.svg" alt="">',
    })
@@ -96,11 +97,11 @@ $(function () {
 
    $('.quantity-button').on('click', function () {
       let summ = ($('.nights').val()) * ($('.summ').data('night')) + ($('.guests').val() - 1) * ($('.summ').data('guests'))
-      $('.summ').html('$' + summ);
+      $('.summ').html('$ ' + summ);
    })
 
    let summ = $('.nights').val() * $('.summ ').data('night') + ($('.guests').val() - 1) * $('.summ').data('guests')
-   $('.summ').html('$' + summ);
+   $('.summ').html('$ ' + summ);
 
 
 

@@ -598,7 +598,7 @@
       width: 150px;
       position: absolute;
       right: 0;
-      top: 35%;
+      top: 40%;
    }
 
    .headline-right {
@@ -676,6 +676,34 @@
    .holder-slider__btn {
       text-align: center;
    }
+
+   .slick-dots {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      top: 60%;
+      left: 40%;
+      li {
+         margin-left: 5px;
+         button {
+            border: none;
+            border-radius: 50%;
+            height: 10px;
+            width: 10px;
+            padding: 0;
+            margin: 0;
+            font-size: 0;
+            background-color: #fff;
+         }
+      }
+
+      .slick-active {
+         button {
+            background-color: $aqua;
+         }
+      }
+   }
 }
 
 .holder-slider__info {
@@ -709,28 +737,24 @@
    font-size: 12px;
    line-height: 16px;
    font-weight: 800;
-   padding-left: 18px;
-   .info__title-span {
-      position: absolute;
-      font-size: 8px;
-      line-height: 0;
-      text-align: right;
-      letter-spacing: 0.6px;
-      text-transform: uppercase;
-      opacity: 0.75;
-      bottom: -8px;
-      right: 0;
-   }
-   .info__title-prise-span {
-      display: inline-block;
-      position: absolute;
-      justify-content: end;
-      font-size: 10px;
-      line-height: 0;
-      text-transform: uppercase;
-      opacity: 0.75;
-      bottom: -8px;
-      right: 0;
+   padding-left: 16px;
+
+   .summ-box {
+      display: flex;
+      flex-direction: column;
+      .summ {
+         position: fixed;
+      }
+
+      .info__title-prise-span {
+         position: relative;
+         display: inline-block;
+         justify-content: end;
+         font-size: 10px;
+         text-transform: uppercase;
+         opacity: 0.75;
+         top: 15px;
+      }
    }
 }
 
@@ -819,6 +843,103 @@
                }
             }
          }
+
+         .surfboard {
+            position: relative;
+            img {
+               width: 80px;
+               height: 270px;
+            }
+
+            .surfboard-box {
+               position: absolute;
+
+               .surfboard__box-circle {
+                  position: relative;
+                  width: 15px;
+                  height: 15px;
+                  border-radius: 50%;
+                  background: #fff;
+                  cursor: pointer;
+
+                  &.activ {
+                     .circle-row {
+                        transform: translate(-50%, -50%) rotate(0deg);
+                     }
+                  }
+
+                  .circle-row {
+                     background-color: $aqua;
+                     position: absolute;
+                     width: 12px;
+                     height: 2px;
+                     top: 50%;
+                     left: 50%;
+                     transform: translate(-50%, -50%) rotate(0deg);
+                     & + .circle-row {
+                        transform: translate(-50%, -50%) rotate(90deg);
+                     }
+                  }
+               }
+
+               .surfboard__box-content {
+                  display: none;
+                  position: absolute;
+                  width: 150px;
+                  font-size: 12px;
+                  line-height: 12px;
+                  font-weight: 800;
+                  padding-left: 35px;
+                  top: -12px;
+                  left: 23px;
+                  &::before {
+                     content: "";
+                     position: absolute;
+                     background-color: #fff;
+                     width: 30px;
+                     height: 1px;
+                     left: 0;
+                     top: 50%;
+                  }
+               }
+            }
+
+            .surfboard-box__position-1 {
+               right: 7px;
+               top: 70px;
+            }
+
+            .surfboard-box__position-2 {
+               left: 0;
+               top: 115px;
+            }
+
+            .surfboard-box__position-3 {
+               top: 234px;
+               left: 15px;
+               .surfboard__box-content {
+                  padding-left: 0;
+                  padding-right: 0;
+                  width: 105px;
+                  top: -10px;
+                  left: -130px;
+                  &::before {
+                     content: "";
+                     position: absolute;
+                     background-color: #fff;
+                     width: 30px;
+                     height: 1px;
+                     left: auto;
+                     right: -18px;
+                     top: 50%;
+                  }
+               }
+            }
+
+            .surfboard__box-circle.activ + .surfboard__box-content {
+               display: block;
+            }
+         }
       }
 
       .shop__slider__btn {
@@ -846,7 +967,6 @@
          align-items: flex-end;
 
          .shop__extras {
-            padding: 0 10px 0 10px;
             .shop__extras-inner {
                display: flex;
             }
@@ -858,14 +978,6 @@
                line-height: 22px;
                text-transform: uppercase;
                letter-spacing: 1px;
-            }
-         }
-
-         .surfboard {
-            position: relative;
-            img {
-               width: 80px;
-               height: 270px;
             }
          }
 
@@ -896,103 +1008,41 @@
                width: 55px;
             }
          }
-
-         .surfboard-box {
-            position: absolute;
-         }
-
-         .surfboard-box__position-1 {
-            right: 7px;
-            top: 70px;
-         }
-
-         .surfboard-box__position-2 {
-            left: 0;
-            top: 115px;
-         }
-
-         .surfboard-box__position-3 {
-            top: 234px;
-            left: 15px;
-            .surfboard__box-content {
-               padding-left: 0;
-               padding-right: 0;
-               width: 105px;
-               top: -10px;
-               left: -130px;
-               &::before {
-                  content: "";
-                  position: absolute;
-                  background-color: #fff;
-                  width: 30px;
-                  height: 1px;
-                  left: auto;
-                  right: -18px;
-                  top: 50%;
-               }
-            }
-         }
-
-         .surfboard__box-circle {
-            position: relative;
-            width: 15px;
-            height: 15px;
-            border-radius: 50%;
-            background: #fff;
-            cursor: pointer;
-
-            &.activ {
-               .circle-row {
-                  transform: translate(-50%, -50%) rotate(0deg);
-               }
-            }
-         }
-      }
-
-      .surfboard__box-content {
-         display: none;
-         position: absolute;
-         width: 150px;
-         font-size: 12px;
-         line-height: 12px;
-         font-weight: 800;
-         padding-left: 35px;
-         top: -12px;
-         left: 23px;
-         &::before {
-            content: "";
-            position: absolute;
-            background-color: #fff;
-            width: 30px;
-            height: 1px;
-            left: 0;
-            top: 50%;
-         }
       }
    }
 
-   .circle-row {
-      background-color: $aqua;
+   .slick-dots {
+      display: flex;
+      align-items: center;
+      justify-content: center;
       position: absolute;
-      width: 12px;
-      height: 2px;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%) rotate(0deg);
-      & + .circle-row {
-         transform: translate(-50%, -50%) rotate(90deg);
+      left: 46%;
+      li {
+         margin-left: 5px;
+         button {
+            border: none;
+            border-radius: 50%;
+            height: 10px;
+            width: 10px;
+            padding: 0;
+            margin: 0;
+            font-size: 0;
+            background-color: #fff;
+         }
       }
-   }
 
-   .surfboard__box-circle.activ + .surfboard__box-content {
-      display: block;
+      .slick-active {
+         button {
+            background-color: $aqua;
+         }
+      }
    }
 }
 
 .footer {
    text-align: center;
    .btn {
-      padding-bottom: 30px;
+      padding: 0 0 30px 40px;
       span {
          text-transform: uppercase;
          font-weight: 800;

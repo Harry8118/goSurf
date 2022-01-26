@@ -209,9 +209,9 @@ input[type="number"] {
 }
 
 .quantity input {
-   width: 30px;
+   width: 12px;
    height: 20px;
-   // float: left;
+   padding: 0;
    display: block;
    font-size: inherit;
    font-weight: 800;
@@ -250,3 +250,25 @@ input[type="number"] {
    position: absolute;
    right: 25px;
 }
+
+// .shop__slider,
+// .holder__slider {
+//    .slick-dots {
+//       display: flex;
+//       align-items: center;
+//       justify-content: center;
+
+//       li {
+//          list-style: none;
+//          button {
+//             font-size: 0;
+//             width: 10px;
+//             height: 10px;
+//             background-color: #fff;
+//             border-radius: 50%;
+//             border: none;
+//             padding: 0;
+//          }
+//       }
+//    }
+// }
