@@ -1046,10 +1046,9 @@
       span {
          text-transform: uppercase;
          font-weight: 800;
-         &::before {
-            width: 13px;
-            left: -10px;
-         }
+      }
+      span:hover {
+         opacity: 0.5;
       }
    }
 

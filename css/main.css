@@ -1381,9 +1381,8 @@ input[type=number] {
   text-transform: uppercase;
   font-weight: 800;
 }
-.footer .btn span::before {
-  width: 13px;
-  left: -10px;
+.footer .btn span:hover {
+  opacity: 0.5;
 }
 .footer .footer-arrows {
   float: right;
