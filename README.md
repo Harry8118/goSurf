@@ -10,6 +10,7 @@ the site is hosted.all files are on filezilla
 ### The page can also be called with the URL
 http://gosurf.atwebpages.com/
 
+#### the original domain
 http://www.gosurf.tk/
 
 
