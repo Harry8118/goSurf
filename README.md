@@ -20,4 +20,10 @@ if you want to see the original style of the site, the figma layout is also on t
 
 
 ### The following technologies are used in the project:
-Sass Js Slick-slider Animate.css
+Sass Js 
+
+#### packages
+
+Slick-slider 
+
+Animate.css
